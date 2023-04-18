@@ -1,0 +1,67 @@
+/* Estilo del contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo de los encabezados */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Estilo de los campos de entrada */
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los botones de cifrado y descifrado */
+.form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  border: none;
+}
+
+/* Estilo de los campos de texto */
+.texto label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.texto textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Estilo del botón de cifrar */
+#cifrar {
+  background-color: #4CAF50;
+}
+
+/* Estilo del botón de descifrar */
+#descifrar {
+  background-color: #f44336;
+}
