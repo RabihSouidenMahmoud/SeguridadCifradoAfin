@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cifrado Afin</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Proyecto Cifrado Afin</h1>
-        <div class="form">
-            <label for="a">Ingrese el valor de A:</label>
-            <input type="number" id="a" min="1" max="1000" required>
-            <label for="b">Ingrese el valor de B:</label>
-            <input type="number" id="b" min="0" max="1000" required>
-            <button id="cifrar" onclick="recogerTextoCifrado()">Cifrar</button>
-            <button id="descifrar" onclick="recogerTextoDescifrado()">Descifrar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguridad informatica</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <h1>Seguridad informatica</h1>
+  </body>
+
+  <body>
+    <main>
+      <div class="contenedor-pricipal" id="formulario">
+        <div class="caja-posterior">
+          <div class="caja-posterior-ingreso">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para disfrutar de los beneficios</p>
+            <button id="iniciar-sesion">Iniciar Sesión</button>
+          </div>
+          <div class="caja-posterior-registro">
+            <h3>Si no posee cuenta registrese</h3>
+            <button id="registrarse">Regístrar</button>
+          </div>
         </div>
-        <div class="textos">
-            <div class="texto">
-                <label for="texto-original">Texto original:</label>
-                <textarea id="texto-original" placeholder="Ingrese el que se desea cifrar texto aquí"></textarea>
+
+        <!--Formulario de ingreso y registro-->
+        <div class="contenedor-ingreso-registro">
+          <!--Login-->
+          <form
+            action=""
+            onsubmit="login()"
+            class="formulario-ingreso"
+            id="iniciar-sesion"
+          >
+            <h2>Iniciar Sesión</h2>
+            <div>
+              <input
+                id="loginMail"
+                type="text"
+                placeholder="Correo Electronico"
+                required
+              />
             </div>
-            <div class="texto">
-                <label for="texto-cifrado">Texto cifrado:</label>
-                <textarea id="texto-cifrado" placeholder="Texto para cifrar"></textarea>
+            <div>
+              <input
+                id="loginPssw"
+                type="password"
+                placeholder="Contraseña"
+                required
+              />
             </div>
-            <div class="texto">
-                <label for="texto-descifrado">Texto descifrado 1:</label>
-                <textarea id="texto-descifrado" readonly></textarea>
+            <div>
+              <button class="alerta" type="submit" id="">ingresar</button>
             </div>
-            <div class="texto">
-                <label for="texto-descifrado2">Texto descifrado 2:</label>
-                <textarea id="texto-descifrado2" readonly></textarea>
+          </form>
+
+          <!--Register-->
+          <form
+            action=""
+            onsubmit="registerData()"
+            class="formulario-registro"
+            id="registrar"
+          >
+            <h2>Regístrar</h2>
+            <div>
+              <input
+                class="valid-tooltip"
+                id="regisName"
+                type="text"
+                placeholder="Nombre completo"
+                required
+              />
             </div>
+            <div>
+              <input
+                id="regisMail"
+                type="email"
+                placeholder="Correo Electronico"
+                required
+              />
+            </div>
+            <div>
+              <input
+                id="regisPssw"
+                type="password"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div>
+              <button class="alerta" type="submit" id="registro">
+                Regístrarse
+              </button>
+            </div>
+          </form>
         </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+      </div>
+      <script src="js/login.js"></script>
+    </main>
+  </body>
 </html>

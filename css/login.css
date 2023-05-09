@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: #0b1533;
+}
+.color {
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contenedor-pricipal {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.caja-posterior {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.5);
+}
+
+.caja-posterior div {
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;
+}
+
+.caja-posterior div p,
+.caja-posterior button {
+  margin-top: 30px;
+}
+
+.caja-posterior div h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.caja-posterior div p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.caja-posterior button {
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+}
+
+.caja-posterior button:hover {
+  background: #fff;
+  color: #46a2fd;
+}
+
+/*Formularios*/
+
+.contenedor-ingreso-registro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenedor-ingreso-registro form {
+  width: 100%;
+  padding: 80px 20px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor-ingreso-registro form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #46a2fd;
+}
+
+.contenedor-ingreso-registro form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+.iniciarSesion {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46a2fd;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+.contenedor-ingreso-registro form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46a2fd;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+.alerta {
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  color: yellow;
+  padding-top: 20px;
+}
+
+.formulario-ingreso {
+  opacity: 1;
+  display: block;
+}
+.formulario-registro {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .caja-posterior {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .caja-posterior div {
+    margin: 0px;
+    position: absolute;
+  }
+
+  /*Formularios*/
+
+  .contenedor-ingreso-registro {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+
+  .contenedor-ingreso-registro form {
+    position: relative;
+  }
+}
+
+#map {
+  height: 500px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

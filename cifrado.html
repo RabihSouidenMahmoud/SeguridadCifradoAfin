@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cifrado Afin</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Proyecto Cifrado Afin</h1>
+      <div class="form">
+        <label for="a">Ingrese el valor de A:</label>
+        <input type="number" id="a" min="1" max="1000" required />
+        <label for="b">Ingrese el valor de B:</label>
+        <input type="number" id="b" min="0" max="1000" required />
+        <button id="cifrar" onclick="recogerTextoCifrado()">Cifrar</button>
+        <button id="descifrar" onclick="recogerTextoDescifrado()">
+          Descifrar
+        </button>
+      </div>
+      <div class="textos">
+        <div class="texto">
+          <label for="texto-original">Texto original:</label>
+          <textarea
+            id="texto-original"
+            placeholder="Ingrese el que se desea cifrar texto aquí"
+          ></textarea>
+        </div>
+        <div class="texto">
+          <label for="texto-cifrado">Texto cifrado:</label>
+          <textarea
+            id="texto-cifrado"
+            placeholder="Texto para cifrar"
+          ></textarea>
+        </div>
+        <div class="texto">
+          <label for="texto-descifrado">Texto descifrado 1:</label>
+          <textarea id="texto-descifrado" readonly></textarea>
+        </div>
+        <div class="texto">
+          <label for="texto-descifrado2">Texto descifrado 2:</label>
+          <textarea id="texto-descifrado2" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="js/cifrado.js"></script>
+  </body>
+</html>
